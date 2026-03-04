@@ -1,4 +1,3 @@
-// src/components/Companies.js
 import React, { useState, useMemo } from "react";
 import { MdBusiness, MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 
@@ -75,14 +74,13 @@ const columns = [
 ];
 
 function Companies() {
-  const [sortConfig, setSortConfig] = useState({ key: null, direction: null }); // direction: 'asc' | 'desc' | null
-  const [activeFilter, setActiveFilter] = useState(null); // key of column with visible search input
+  const [sortConfig, setSortConfig] = useState({ key: null, direction: null }); 
+  const [activeFilter, setActiveFilter] = useState(null); 
   const [filters, setFilters] = useState({});
 
   // Toggle sort for a column
   function onSort(key) {
     if (sortConfig.key === key) {
-      // Cycle: asc -> desc -> none
       if (sortConfig.direction === "asc") {
         setSortConfig({ key, direction: "desc" });
       } else if (sortConfig.direction === "desc") {
@@ -125,12 +123,11 @@ function Companies() {
           );
         }
         if (key === "expirationDate") {
-          // Filter date as string includes (basic filter)
           return formatDate(itemValue)
             .toLowerCase()
             .includes(val.toLowerCase());
         }
-        // For other keys, convert to string and check includes
+        
         return itemValue
           .toString()
           .toLowerCase()
@@ -218,7 +215,7 @@ function Companies() {
                       fontSize: 12,
                       boxSizing: "border-box",
                     }}
-                    onClick={(e) => e.stopPropagation()} // prevent header toggle
+                    onClick={(e) => e.stopPropagation()} 
                   />
                 )}
               </th>
