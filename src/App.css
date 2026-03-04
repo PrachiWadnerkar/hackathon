@@ -1,0 +1,428 @@
+.app {
+  display: flex;
+  height: 100vh;
+  font-family: Arial;
+}
+
+.sidebar {
+  width: 250px;
+  background: #002c5f;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.menu-item {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.menu-item.active {
+  background-color: #ff7a00;
+  color: white;
+}
+
+.report {
+  flex: 1;
+  padding: 40px;
+  background: #f5f7fa;
+}
+
+.filters button {
+  margin-right: 10px;
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.active-btn {
+  background: #0073cf;
+  color: white;
+}
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #1f3c88;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  font-family: "Segoe UI", sans-serif;
+  user-select: none;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 30px;
+  letter-spacing: 1.2px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-item {
+  padding: 12px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #324eac;
+}
+
+.menu-item.active {
+  background-color: #ff7a00;
+  color: white;
+}
+
+/* Top Bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 12px 20px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.search-input {
+  width: 40%;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filter-select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-button {
+  background-color: #ff7a00;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #e36600;
+}
+
+/* Dashboard */
+/* Dashboard cards styling */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  /* stronger and softer shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+              0 1px 6px rgba(0, 0, 0, 0.06);
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 320px;
+}
+
+.card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 20px;
+  color: #000;
+  opacity: 0.85;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 700; /* changed from 500 to 700 */
+  color: #666;
+  margin: 0 0 4px 0;
+}
+
+.card-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 6px 0;
+}
+
+.card-subtext {
+  font-size: 13px;
+  color: #2e7d32; /* green for positive subtext */
+  margin: 0;
+}
+
+/* Main app layout */
+.app {
+  display: flex;
+  height: 100vh;
+  background-color: #f7f9fc;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.companies-container {
+  padding: 20px 30px;
+  font-family: "Segoe UI", sans-serif;
+  background: white;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.export-btn {
+  background-color: #2e4a90;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.export-btn:hover {
+  background-color: #23406a;
+}
+
+.companies-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.companies-table thead th {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 2px solid #ddd;
+  color: #555;
+  font-weight: 600;
+}
+
+.companies-table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.companies-table tbody tr:hover {
+  background-color: #f9faff;
+}
+
+.company-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 10px;
+  font-weight: 600;
+  color: #222;
+}
+
+.company-icon {
+  background-color: #dbe9fa;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.revenue-cell {
+  font-weight: 600;
+}
+
+.compliance-score {
+  font-weight: 600;
+}
+
+.sales-contact {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+.companies-table thead th {
+  white-space: nowrap;
+}
+
+.companies-table tbody td {
+  padding: 12px 10px;
+  vertical-align: middle;
+}
+
+.companies-table thead th {
+  white-space: nowrap;
+  position: relative;
+}
+
+.companies-table thead input {
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.companies-table thead th div {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.certificates-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.certificates-table th,
+.certificates-table td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.certificates-table th {
+  background-color: #f4f6f8;
+  font-weight: 600;
+}
+
+/* Margin for table container */
+.certificates-container {
+  font-family: "Segoe UI", sans-serif;
+}
+
+.certificates-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.certificates-table th,
+.certificates-table td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.certificates-table th {
+  background-color: #f4f6f8;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.export-btn {
+  background-color: #2e4a90;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.export-btn:hover {
+  background-color: #23406a;
+}
+
+.certificates-table thead input {
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  cursor: pointer; /* if you want title click to show search */
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #fafafa;
+}
