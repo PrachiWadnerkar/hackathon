@@ -1,4 +1,3 @@
-// src/components/Certificates.js
 import React, { useState, useMemo } from "react";
 import {
   PieChart,
