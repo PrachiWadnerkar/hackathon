@@ -42,7 +42,7 @@
   background: #0073cf;
   color: white;
 }
-/* Sidebar */
+
 .sidebar {
   width: 220px;
   background-color: #1f3c88;
@@ -87,7 +87,6 @@
   color: white;
 }
 
-/* Top Bar */
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -135,8 +134,6 @@
   background-color: #e36600;
 }
 
-/* Dashboard */
-/* Dashboard cards styling */
 .dashboard-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -148,7 +145,7 @@
   position: relative;
   background: #fff;
   border-radius: 12px;
-  /* stronger and softer shadow */
+
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
               0 1px 6px rgba(0, 0, 0, 0.06);
   padding: 20px 25px;
@@ -177,7 +174,7 @@
 
 .card-title {
   font-size: 14px;
-  font-weight: 700; /* changed from 500 to 700 */
+  font-weight: 700; 
   color: #666;
   margin: 0 0 4px 0;
 }
@@ -191,11 +188,10 @@
 
 .card-subtext {
   font-size: 13px;
-  color: #2e7d32; /* green for positive subtext */
+  color: #2e7d32;
   margin: 0;
 }
 
-/* Main app layout */
 .app {
   display: flex;
   height: 100vh;
@@ -354,7 +350,6 @@
   font-weight: 600;
 }
 
-/* Margin for table container */
 .certificates-container {
   font-family: "Segoe UI", sans-serif;
 }
@@ -416,7 +411,7 @@
 .styled-table th {
   background-color: #f4f4f4;
   font-weight: bold;
-  cursor: pointer; /* if you want title click to show search */
+  cursor: pointer; 
 }
 
 .styled-table tbody tr:hover {
