@@ -16,7 +16,7 @@ function RevenueAnalytics() {
         width: "100%",
         display: "flex",
         justifyContent: "center",
-        marginTop: "40px"   // added extra top margin
+        marginTop: "40px"
       }}
     >
       <div
